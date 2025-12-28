@@ -1,18 +1,13 @@
-/* =================
-   GLOBAL
-================= */
 body {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
 
 .section-padding {
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
-/* =================
-   HERO SECTION
-================= */
+/* HERO */
 .hero-section {
     height: 100vh;
     background: url("../assets/img/hero.jpg") center/cover no-repeat;
@@ -22,27 +17,21 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.45);
+    background: rgba(0,0,0,0.45);
 }
 
-/* =================
-   NAVBAR
-================= */
-.navbar-brand {
-    letter-spacing: 0.5px;
-}
-
-/* =================
-   CARD IMAGE
-================= */
+/* CARD IMAGE */
 .card img {
-    height: 220px;
+    height: 240px;
     object-fit: cover;
 }
 
-/* =================
-   RESPONSIVE
-================= */
+/* NAVBAR LOGO */
+.navbar-brand img {
+    object-fit: contain;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
     .hero-section h1 {
         font-size: 2.2rem;
