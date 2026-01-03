@@ -123,3 +123,8 @@ section {
 .keyboard-box:hover .keyboard-img {
   transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
 }
+
+.badge-lg {
+  font-size: 1rem;
+  padding: 0.8em 1.2em;
+}
