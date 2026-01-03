@@ -128,3 +128,15 @@ section {
   font-size: 1rem;
   padding: 0.8em 1.2em;
 }
+
+#about .card {
+  border-radius: 15px;
+}
+
+#about h6 {
+  font-weight: 600;
+}
+
+#about ul li {
+  padding: 3px 0;
+}
