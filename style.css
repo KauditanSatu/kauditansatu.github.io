@@ -1,39 +1,125 @@
-body {
-    font-family: 'Inter', sans-serif;
-    scroll-behavior: smooth;
+.jumbotron {
+  min-height: 100vh;
+  background-image: url("img//projects/pemandangan.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
 }
 
-.section-padding {
-    padding: 90px 0;
+/* gradasi HANYA di bagian bawah */
+.jumbotron::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ffffff);
+}
+.hero-logo {
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.35));
 }
 
-/* HERO */
-.hero-section {
-    height: 100vh;
-    background: url("../assets/img/hero.jpg") center/cover no-repeat;
-    position: relative;
+#projects {
+  background-color: #e2edff;
 }
 
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
+section {
+  padding-top: 5rem;
 }
 
-/* CARD IMAGE */
-.card img {
-    height: 240px;
-    object-fit: cover;
+/* My Keyboard Section */
+.keyboard-box {
+  position: relative;
+  background-color: #0c6efd;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
 }
 
-/* NAVBAR LOGO */
-.navbar-brand img {
-    object-fit: contain;
+.keyboard-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2.2rem;
-    }
+.keyboard-box:hover::before {
+  opacity: 0.2;
+}
+
+.keyboard-box::after {
+  content: "KEYBOARD";
+  position: absolute;
+  color: #fff;
+  font-size: 4.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover::after {
+  opacity: 0.2;
+}
+
+.keyboard-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.keyboard-box:hover .keyboard-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.keyboard-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.keyboard-box:hover .keyboard-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.keyboard-img {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 80px);
+  max-width: 350px;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.keyboard-box:hover .keyboard-img {
+  transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
 }

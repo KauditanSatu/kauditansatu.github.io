@@ -1,223 +1,289 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO -->
-    <title>Desa Wisata Kauditan Satu | Official Tourism Website</title>
-    <meta name="description" content="Website resmi Desa Wisata Kauditan Satu yang menyajikan destinasi wisata, budaya, galeri, dan informasi resmi desa.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      crossorigin="anonymous"
+    />
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-    <div class="container">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-            <img src="assets/img/logo minut.png" alt="Logo Kabupaten" height="40">
-            <span class="fw-semibold">
-                <span data-lang="id">Desa Kauditan Satu</span>
-                <span data-lang="en" class="d-none">Kauditan Satu Village</span>
-            </span>
-        </a>
+    <title>Desa Wisata Kauditan Satu</title>
+  </head>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kauditan Satu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#hero">
-                        <span data-lang="id">Beranda</span>
-                        <span data-lang="en" class="d-none">Home</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#destinasi">
-                        <span data-lang="id">Destinasi</span>
-                        <span data-lang="en" class="d-none">Destinations</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#profil">
-                        <span data-lang="id">Profil</span>
-                        <span data-lang="en" class="d-none">Profile</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#galeri">
-                        <span data-lang="id">Galeri</span>
-                        <span data-lang="en" class="d-none">Gallery</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#kontak">
-                        <span data-lang="id">Kontak</span>
-                        <span data-lang="en" class="d-none">Contact</span>
-                    </a>
-                </li>
-
-                <li class="nav-item ms-lg-3">
-                    <button class="btn btn-outline-secondary btn-sm" onclick="setLanguage('id')">ID</button>
-                    <button class="btn btn-outline-secondary btn-sm" onclick="setLanguage('en')">EN</button>
-                </li>
-
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Wisata">Wisata</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
 
-<!-- ================= HERO ================= -->
-<section id="hero" class="hero-section d-flex align-items-center">
-    <div class="hero-overlay"></div>
-    <div class="container text-center text-white position-relative">
-        <h1 class="display-4 fw-bold">
-            <span data-lang="id">Desa Wisata [Nama Desa]</span>
-            <span data-lang="en" class="d-none">[Village Name] Tourism Village</span>
-        </h1>
-        <p class="lead mt-3">
-            <span data-lang="id">Pesona alam, budaya, dan kearifan lokal</span>
-            <span data-lang="en" class="d-none">Nature, culture, and local wisdom</span>
-        </p>
-    </div>
-</section>
+    <!-- JUMBOTRON -->
+    <section class="jumbotron d-flex align-items-center text-center">
+      <div class="container position-relative">
+        <img src="img/projects/dewiicon.png" alt="Sandhika Galih" width="200" class="hero-logo mb-3" />
 
-<!-- ================= DESTINASI ================= -->
-<section id="destinasi" class="section-padding">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2>
-                <span data-lang="id">Destinasi Wisata</span>
-                <span data-lang="en" class="d-none">Tourist Destinations</span>
-            </h2>
+        <h1 class="display-4">Kauditan Satu</h1>
+        <p class="lead"></p>
+      </div>
+    </section>
+    <!-- AKHIR JUMBOTRON -->
+
+    <!-- AKHIR JUMBOTRON -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col" data-aos="fade-down">
+            <h2>Tentang</h2>
+          </div>
         </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4" data-aos="fade-right">
+            <p>
+              Desa Kauditan I merupakan desa keenam yang terbentuk setelah Desa Tuwâa, Matani, Karondoran, Kawangkoan, dan Temboan. Nama Kauditan berasal dari kata “Ma-Udit” atau “Maudit-uditan” yang bermakna bersatu dan berusaha dengan
+              sungguh-sungguh. Filosofi ini dicetuskan oleh Petrus Ngantung, yang saat itu menjabat sebagai Kepala Wanua (Tua Um Banua), dan hingga kini menjadi nilai dasar kehidupan masyarakat Desa Kauditan I.
+            </p>
+          </div>
 
-        <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <img src="assets/img/gunungklabat.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5>Wisata Alam</h5>
-                        <p class="text-muted">Gunung Klabat adalah gunung tertinggi di Sulawesi Utara yang menawarkan panorama alam megah serta menjadi ikon keindahan dan kebanggaan masyarakat Minahasa.</p>
-                    </div>
-                </div>
+          <div class="col-md-4" data-aos="fade-left">
+            <p>
+              Perjalanan sejarah Desa Kauditan I merupakan bagian dari perkembangan wilayah yang panjang, dimulai dari Desa Tuwâa pada tahun 1644–1645 hingga akhirnya Desa Kauditan terbentuk dan berkembang pada periode 1845–1977. Proses ini
+              mencerminkan dinamika sosial, budaya, serta semangat kebersamaan masyarakat dari masa ke masa.
+            </p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="10"
+          d="M0,96L48,122.7C96,149,192,203,288,192C384,181,480,107,576,80C672,53,768,75,864,101.3C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Wisata Budaya</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3" data-aos="flip-right">
+            <div class="card">
+              <img src="img/projects/kabasaran.jpg" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <p class="card-text">Tarian Kabasaran merupakan tarian perang tradisional khas Minahasa di Sulawesi Utara yang melambangkan keberanian, kehormatan, dan semangat kepahlawanan leluhur.</p>
+              </div>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <img src="assets/img/kabasaran.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5>Wisata Budaya</h5>
-                        <p class="text-muted">Tarian Kabasaran merupakan tarian perang tradisional khas Minahasa di Sulawesi Utara yang melambangkan keberanian, kehormatan, dan semangat kepahlawanan leluhur.
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="500">
+            <div class="card">
+              <img src="img/projects/maengket.jpg" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <p class="card-text">Tarian Maengket adalah tarian tradisional Minahasa yang penuh semangat, biasanya dibawakan saat musim panen atau upacara adat, melambangkan rasa syukur, kebersamaan, dan keharmonisan masyarakat.</p>
+              </div>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <img src="assets/img/kuliner.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5>Wisata Kuliner</h5>
-                        <p class="text-muted">Jona Kitchen menghadirkan cita rasa kuliner khas Minahasa dengan olahan rumahan autentik, lezat, dan penuh kehangatan, cocok dinikmati bersama keluarga maupun wisatawan yang berkunjung ke Kauditan.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="1000">
+            <div class="card">
+              <img src="img/projects/katrili.jpg" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <p class="card-text">
+                  Tarian Katrili adalah tarian tradisional yang populer di Sulawesi Utara, menampilkan gerakan ritmis dan ceria dengan musik pengiring khas, sering dipentaskan pada acara perayaan dan festival budaya untuk mempererat
+                  kebersamaan masyarakat.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
 
-<!-- ================= PROFIL DESA ================= -->
-<section id="profil" class="section-padding bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2>
-                <span data-lang="id">Profil Pejabat Desa</span>
-                <span data-lang="en" class="d-none">Village Officials</span>
-            </h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="10"
+          d="M0,192L30,208C60,224,120,256,180,245.3C240,235,300,181,360,181.3C420,181,480,235,540,261.3C600,288,660,288,720,272C780,256,840,224,900,218.7C960,213,1020,235,1080,245.3C1140,256,1200,256,1260,250.7C1320,245,1380,235,1410,229.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Projects -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
         </div>
-
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-4">
-                <div class="card text-center border-0 shadow-sm">
-                    <img src="assets/img/kades.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Nama Kepala Desa</h5>
-                        <p class="text-muted">
-                            <span data-lang="id">Kepala Desa</span>
-                            <span data-lang="en" class="d-none">Village Head</span>
-                        </p>
-                    </div>
-                </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
+            <form name="wpu-contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
 
-            <div class="col-md-4">
-                <div class="card text-center border-0 shadow-sm">
-                    <img src="assets/img/sekdes.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Nama Sekretaris Desa</h5>
-                        <p class="text-muted">Sekretaris Desa</p>
-                    </div>
-                </div>
-            </div>
-
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="10"
+          d="M0,128L30,149.3C60,171,120,213,180,224C240,235,300,213,360,192C420,171,480,149,540,160C600,171,660,213,720,197.3C780,181,840,107,900,101.3C960,96,1020,160,1080,197.3C1140,235,1200,245,1260,234.7C1320,224,1380,192,1410,176L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Contact -->
 
-<!-- ================= GALERI ================= -->
-<section id="galeri" class="section-padding">
-    <div class="container">
-        <div class="row g-3">
-            <div class="col-6 col-md-3"><img src="assets/img/galeri1.jpg" class="img-fluid rounded"></div>
-            <div class="col-6 col-md-3"><img src="assets/img/galeri2.jpg" class="img-fluid rounded"></div>
-            <div class="col-6 col-md-3"><img src="assets/img/galeri3.jpg" class="img-fluid rounded"></div>
-            <div class="col-6 col-md-3"><img src="assets/img/galeri4.jpg" class="img-fluid rounded"></div>
-        </div>
-    </div>
-</section>
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center pb-5">
+      <!-- <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/sandhikagalih/" class="text-white fw-bold">Geovanny Bolang</a></p> -->
+    </footer>
+    <!-- Akhir Footer -->
 
-<!-- ================= KONTAK ================= -->
-<section id="kontak" class="section-padding bg-light text-center">
-    <div class="container">
-        <h2>Kontak</h2>
-        <a href="https://wa.me/628xxxxxxxxxx" class="btn btn-success mt-3">WhatsApp</a>
-        <p class="text-muted mt-3">Alamat : Kauditan Satu</p>
-    </div>
-</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-<footer class="bg-dark text-white text-center py-3">
-    <small>&copy; 2025 Desa Wisata</small>
-</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<!-- ================= JS ================= -->
-<script>
-function setLanguage(lang) {
-    document.querySelectorAll('[data-lang]').forEach(el => {
-        el.classList.add('d-none');
-        if (el.getAttribute('data-lang') === lang) {
-            el.classList.remove('d-none');
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.from(".hero-logo", {
+        duration: 2,
+        rotationX: 360,
+        ease: "power2.out",
+      });
+
+      gsap.from(".navbar", { duration: 1.5, opacity: 0, y: "-100%", ease: "bounce" });
+      gsap.from(".display-4", { delay: 1, duration: 1, opacity: 0, x: "-10%" });
+
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { delay: 1.5, duration: 2, text: "Minahasa Utara" });
+
+      const galleryImages = document.querySelectorAll(".gallery-img");
+      const delayTimes = [0, 50, 100, 150, 200, 250, 300, 350, 400, 450];
+
+      function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
         }
-    });
-}
-</script>
+        return array;
+      }
+      const newDelay = shuffleArray(delayTimes);
+      galleryImages.forEach((img, i) => {
+        img.dataset.aos = "fade-up";
+        img.dataset.aosDelay = i * 50 + "";
+        // img.dataset.aosDelay = newDelay[i];
+      });
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      AOS.init({
+        once: true,
+        duration: 3000,
+      });
+    </script>
+
+    <script>
+      // const scriptURL = "https://script.google.com/macros/s/AKfycbzjWwvjJihKz3-24SxEnHM5XFjNPgQd_dv3uD_fgjLSp_4AAXsC6IC4C_ECvWyLkGsuBg/exec";
+      const form = document.forms["wpu-contact-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 35,
+        speed: 1000,
+        glare: true,
+      });
+    </script>
+  </body>
 </html>
